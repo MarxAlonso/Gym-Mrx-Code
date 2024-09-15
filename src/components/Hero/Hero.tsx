@@ -1,3 +1,5 @@
+import { FaPlay } from "react-icons/fa";
+
 export const Hero = () => {
   return (
     <>
@@ -15,13 +17,18 @@ export const Hero = () => {
                 content of a page when are the best product.
               </p>
               {/* Seccion de boton */}
-              <div className="flex justify-center gap-8 md:justify-start">
-                <button className="primary-btn flex items-center gap-2 mt-4">Ordenar Ahora</button>
-                <button>Ver Ahora</button>
+              <div className="flex justify-center items-center gap-8 md:justify-start !mt-4">
+                <button className="primary-btn flex items-center gap-2">Ordenar Ahora</button>
+                <button className="flex justify-center items-center gap-2">
+                    <FaPlay /> Ver Ahora
+                    </button>
               </div>
             </div>
           </div>
           {/* Hero Image */}
+          <div>
+            <img src="" alt="" />
+          </div>
         </div>
       </section>
     </>
