@@ -1,11 +1,11 @@
-import { Hero } from "../../components/Hero/Hero"
-import { Navbar } from "../../components/Navbar/Navbar"
+import { Hero } from "../../components/Hero/Hero";
+import { Navbar } from "../../components/Navbar/Navbar";
 
 export const HomePage = () => {
-    return(
-        <>
-        <Navbar />
-        <Hero />
-        </>
-    )
-}
+  return (
+    <div className="overflow-x-hidden">
+      <Navbar />
+      <Hero />
+    </div>
+  );
+};
