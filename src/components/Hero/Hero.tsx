@@ -1,5 +1,5 @@
 import { FaPlay } from "react-icons/fa";
-
+import HeroImg from "../../assets/dumbell.png"
 export const Hero = () => {
   return (
     <>
@@ -26,8 +26,8 @@ export const Hero = () => {
             </div>
           </div>
           {/* Hero Image */}
-          <div>
-            <img src="" alt="" />
+          <div className="flex justify-center items-center">
+            <img src={HeroImg} alt="" className="w-[350px] md:w-[550px] xl:w-[700px] drop-shadow"/>
           </div>
         </div>
       </section>
