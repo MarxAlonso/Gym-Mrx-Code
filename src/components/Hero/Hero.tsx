@@ -18,6 +18,22 @@ const SlideRight = (delay: number) => {
     },
   };
 };
+const SlideUp = (delay: number) => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: delay,
+      },
+    },
+  };
+};
 export const Hero = () => {
   return (
     <>
@@ -62,7 +78,11 @@ export const Hero = () => {
           </div>
           {/* Hero Image */}
           <div className="flex justify-center items-center">
-            <img
+            <motion.img
+              variants={SlideUp(0.6)}
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
               src={HeroImg}
               alt=""
               className="w-[350px] md:w-[550px] xl:w-[700px] drop-shadow"
