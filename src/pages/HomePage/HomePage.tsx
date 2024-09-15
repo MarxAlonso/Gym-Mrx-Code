@@ -1,6 +1,7 @@
 import { Hero } from "../../components/Hero/Hero";
 import { Navbar } from "../../components/Navbar/Navbar";
 import BgImage from "../../assets/bg.png";
+import { Equipamiento } from "../../components/Equipamiento/Equipamiento";
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
   backgroundRepeat: "no-repeat",
@@ -15,6 +16,7 @@ export const HomePage = () => {
         <Navbar />
         <Hero />
       </div>
+      <Equipamiento />
     </div>
   );
 };
