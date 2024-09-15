@@ -7,6 +7,7 @@ import { Banner, BannerPrincipal } from "../../components/Banner/Banner";
 import Img1 from "../../assets/2.png"
 import Img2 from "../../assets/3.png"
 import { TabComp } from "../../components/Tab/TabComp";
+import { Testimonios } from "../../components/Testimonios/Testimonios";
 const BannerData = {
   image: Img1,
   title: "The Importants To Take Care Of Yourself",
@@ -40,6 +41,7 @@ export const HomePage = () => {
       <BannerPrincipal {...Banner2Data} />
       <Banner />
       <TabComp />
+      <Testimonios />
     </div>
   );
 };
